@@ -1,0 +1,380 @@
+﻿UNIVERSIDAD NACIONAL DEL ALTIPLANO
+FACULTAD DE INGENIERÍA MECÁNICA ELÉCTRICA, ELECTRÓNICA Y SISTEMAS
+ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
+ 
+  
+  
+
+TEMA:
+Sistema Web de Gestión Logística e Inventario de Productos Electrónicos
+PRESENTADO POR:
+Quispe Cruz Anthony Junior
+Quispe Huaman Franklin Victor
+Tito Monteagudo William Dominic
+ Vilca Carpio Carlos Daniel
+CURSO:
+INGENIERÍA DE SOFTWARE 
+Docente:
+INGALUQUE ARAPA MARGA ISABEL   
+SEMESTRE 2026 - II
+Grupo: 6
+PUNO, PERÚ
+2026
+FORMATO PARA PRESENTACIÓN DEL PLAN DE PROYECTO DE INGENIERÍA DE SOFTWARE
+Curso: Ingeniería de Software
+Semestre: 2026-II
+Modalidad: Grupal
+Presentación: Semana 3
+PLAN DE PROYECTO DE SOFTWARE
+El Plan de Proyecto constituye la planificación inicial del producto de software que el grupo desarrollará progresivamente durante el semestre. Permitirá definir el problema que se pretende resolver, los objetivos, usuarios, alcance preliminar, antecedentes, modelo de proceso de desarrollo, tecnologías previstas y organización del trabajo.
+Por tratarse de un documento de planificación, los aspectos relacionados con la solución propuesta deberán redactarse principalmente en un tiempo futuro. La descripción del contexto, situación problemática y antecedentes podrá redactarse en presente o pasado, según corresponda.
+El proyecto tendrá los siguientes hitos:
+Semana 3: Plan de Proyecto de Software.
+Semana 8: Informe Técnico de Análisis y Diseño.
+Semana 13: Informe Técnico de Construcción y Verificación.
+Semana 17: Informe Técnico Final y Producto de Software Funcional.
+1. TÍTULO DEL PROYECTO
+Sistema Web de Gestión Logística e Inventario de Productos Electrónicos
+2. DATOS DEL GRUPO
+Número de grupo: 6
+Integrantes:
+1. Quispe Cruz Anthony Junior
+2. Quispe Huaman Franklin Victor
+3. Tito Monteagudo William Dominic
+4.  Vilca Carpio Carlos Daniel
+Curso: Ingeniería de Software
+Semestre: 2026-II
+Fecha de presentación: 16/09/2026
+3. CONTEXTO DEL PROYECTO
+El proyecto se desarrollará en el entorno de pequeñas y medianas empresas o negocios dedicados a la comercialización, importación y distribución de productos, componentes y equipos electrónicos. Estas empresas suelen operar en mercados locales o regionales (como tiendas de suministros tecnológicos, ferreterías electrónicas o distribuidores mayoristas), donde la gestión eficiente de la cadena de suministro y el control de stock son críticos debido a la alta rotación, variedad y especificidad técnica de los artículos electrónicos (resistencias, microcontroladores, placas, sensores, herramientas y equipos de medición).
+Actualmente, muchas de estas organizaciones operan en un entorno comercial dinámico pero con procesos logísticos parcialmente centralizados o manuales, lo que demanda un soporte tecnológico web para centralizar el flujo de entradas, salidas, almacenamiento y trazabilidad de los productos electrónicos, permitiendo interactuar con múltiples usuarios desde distintas ubicaciones o sucursales de manera concurrente.
+
+
+4. SITUACIÓN PROBLEMÁTICA
+* Descripción del problema: Inexistencia de un control automatizado y centralizado para gestionar el inventario y la trazabilidad de componentes electrónicos con alta especificidad técnica (resistencias, microcontroladores, sensores) en pymes comercializadoras.
+* Situación actual: Las pymes distribuidoras de productos electrónicos gestionan catálogos dinámicos con especificidad técnica (voltajes, encapsulados, tolerancias) mediante registros manuales u hojas de cálculo locales desactualizadas.
+* Afectados:
+   * Personal de almacén: Pierde tiempo en búsquedas físicas y sufre desfases de stock.
+   * Vendedores: Carecen de visibilidad en tiempo real de la mercancía en otras sucursales.
+   * Administradores: Toman decisiones de compra con datos incompletos o desfasados.
+* Dificultades principales:
+   * Actualización diferida e inconsistente del inventario.
+   * Alto riesgo de error en la identificación y despacho de componentes similares.
+   * Operación aislada entre sucursales por falta de acceso web concurrente.
+* Necesidad a resolver (vía software): Implementar un sistema web centralizado que automatice las entradas, salidas y trazabilidad del stock en tiempo real, permitiendo el acceso seguro y simultáneo desde múltiples ubicaciones.
+* Consecuencias: Pérdidas económicas por sobrestock o desabastecimiento, retrasos en la atención al cliente e incapacidad de escalar el negocio.
+5. JUSTIFICACIÓN
+* Pertinencia de la solución: Es necesario desarrollar este sistema web porque aplicar métodos de Ingeniería de Software resulta más económico a largo plazo que mantener procesos empíricos o informales, reduciendo costos de pruebas, control de calidad y mantenimiento. Un enfoque disciplinado minimiza el retrabajo y el margen de error en la gestión logística de componentes complejos.
+* Aporte para la organización:
+   * Control y reducción de costos: Disminuye las pérdidas económicas al evitar el desabastecimiento y la acumulación innecesaria de mercancía.
+   * Calidad y confiabilidad operativa: Minimiza los fallos operativos para prevenir daños económicos o pérdida de reputación frente a los clientes.
+   * Evolución y escalabilidad: Proporciona una arquitectura mantenible que permite a la pyme adaptarse rápidamente a los cambios del mercado y agregar nuevas sucursales o funcionalidades en el futuro.
+* Beneficios para los usuarios:
+   * Almaceneros: Trazabilidad precisa de componentes con características técnicas específicas, reduciendo la confusión y el tiempo de búsqueda física.
+   * Vendedores: Acceso instantáneo al inventario centralizado y sincronizado en tiempo real desde cualquier ubicación.
+   * Administradores: Visibilidad total del estado de las existencias para una toma de decisiones informada y rápida.
+6. OBJETIVOS DEL PROYECTO
+6.1. Objetivo general
+Desarrollar un sistema web centralizado para la gestión logística y control de inventario de productos electrónicos en pymes, optimizando la trazabilidad, las entradas y salidas de mercancía, y garantizando el acceso seguro y simultáneo desde múltiples sucursales en tiempo real.
+6.2. Objetivos específicos
+* Levantar y especificar las necesidades operativas de la pyme mediante historias de usuario y modelado de requisitos. 
+* Formular la arquitectura web (API REST) y el modelo relacional (DER) para asegurar una estructura modular y escalable. 
+* Codificar e integrar los módulos esenciales (catálogo técnico, registro transaccional de stock y consultas en tiempo real). 
+* Ejecutar pruebas técnicas (de endpoints y concurrencia) con casos de uso reales para garantizar la calidad y corrección del sistema. 
+7. USUARIOS E INTERESADOS
+Usuario o interesado
+	Necesidad preliminar
+	Relación prevista con el software
+	Personal de Almacén (Usuario final directos)
+	Registrar entradas/salidas, ubicar mercancía físicamente y mantener la trazabilidad de componentes con especificaciones técnicas complejas.
+	Usuario primario: Interactúa diariamente con el software para consultar, registrar e ingresar movimientos de stock e inventario en tiempo real.
+	Personal de Ventas (Usuario final directo)
+	Consultar la disponibilidad de stock en tiempo real entre las distintas sucursales para confirmar pedidos de clientes sin errores.
+	Usuario primario: Utiliza la interfaz web para búsquedas rápidas de productos, verificación de existencias y reserva de artículos para ventas.
+	Administradores / Gerentes de Pyme (Interesado / Usuario)
+	Acceder a reportes consolidados de inventario, métricas de rotación y alertas de desabastecimiento para decisiones de compra. 
+	Usuario y cliente directo: Define parámetros del sistema, consulta reportes estratégicos y evalúa la efectividad del software en el negocio.
+	Proveedores de Electrónica (Interesado externo)
+	Recepción clara de órdenes de compra y especificaciones de componentes requeridos por la empresa.
+	Entidad externa / Interesado secundario: Proporciona los insumos e información técnica de los productos registrados en la plataforma.
+	Clientes de la Pyme (Interesado indirecto)
+	Recibir atención rápida, información precisa de disponibilidad y productos con las especificaciones técnicas correctas.
+	Beneficiario indirecto: Se beneficia del cumplimiento en tiempos de entrega y exactitud en el despacho del pedido.
+	La identificación presentada en esta etapa podrá ser ampliada o modificada posteriormente durante la Ingeniería de Requisitos.
+
+
+8. ANTECEDENTES Y SOLUCIONES RELACIONADAS
+El grupo deberá realizar una búsqueda inicial de trabajos y soluciones que sirvan como referencia para el desarrollo del proyecto.
+Podrán considerarse artículos científicos, tesis, proyectos de software, aplicaciones o soluciones tecnológicas relacionadas, priorizando fuentes académicas y técnicamente confiables.
+Se presentará como mínimo un antecedente por cada integrante del grupo.
+
+
+El grupo deberá explicar qué elemento del antecedente servirá como referencia para el proyecto, pudiendo estar relacionado con funcionalidades, requisitos, arquitectura, diseño, metodología, tecnología, algoritmos, interfaces, resultados u otros aspectos pertinentes.
+Los antecedentes deberán redactarse con palabras propias y citarse correctamente.
+1. Autor(es) o institución: Jan Böhmer (jbtronics) y colaboradores del proyecto Part-DB.
+Año: 2026 (Repositorio activo, Versión 2.17.0)
+Título o denominación: Part-DB: Open Source Inventory Management System for Your Electronic Components.
+Tipo de fuente: Proyecto de software de código abierto / Solución tecnológica.
+Descripción breve: Es un sistema de gestión web diseñado específicamente para el control de inventarios de componentes y partes electrónicas. Permite organizar productos por categorías, fabricantes, ubicaciones de almacenamiento y parámetros técnicos. Además, incluye un generador e integrador de código de barras/QR, trazabilidad de eventos y arquitectura PHP (Symfony) con soporte para bases de datos relacionales(Part-Db, s. f.).
+Aporte al proyecto: Ofrece una referencia directa para la estructuración de la base de datos y catálogos de componentes/productos electrónicos. Sirve como modelo funcional para la implementación de etiquetado por código de barras y la parametrización de especificaciones técnicas de hardware.
+2. Autor(es) o institución: Chávez Palomino, Alfredo Manuel
+Año: 2023
+Título o denominación: Implementación de un sistema web y el control de inventario para una empresa de Lima
+Tipo de fuente: tesis de grado
+Descripción breve: La presente tesis tiene como objetivo principal mejorar el control de inventario en una empresa de Lima en el año 2023 mediante la implementación de un Sistema Web. La metodología utilizada en la investigación es cuantitativa y aplicable, adoptando un diseño preexperimental que incluye una muestra de 26 productos de seguridad industrial en dicha empresa. La recopilación de datos se realizó mediante la técnica de fichaje. La estructura del sistema se desarrolló siguiendo el patrón MVC, utilizando PHP como lenguaje de programación y MySQL como base de datos. Para la gestión del proyecto, se adoptó el marco de trabajo Scrum, posibilitando una planificación y ejecución ágil de las tareas. Adicionalmente, se integró Looker Studio con el propósito de fortalecer la capacidad analítica del sistema mediante la generación de informes y reportes. La implementación del sistema web generó mejoras significativas en las métricas clave de gestión de inventario. Se observaron incrementos notables del 23.48% en el control de inventario, del 21.65% en la exactitud del inventario y del 25.32% en la identificación de la rotación de inventario. Estos resultados subrayan el impacto positivo y estadísticamente significativo de la intervención, respaldando las hipótesis planteadas y resaltando la eficacia del sistema web para la optimización integral de la gestión de inventarios.
+Aporte al proyecto: Este documento proporciona una referencia válida y de uso para diseñar la arquitectura relacional de la base de datos y definir las entidades necesarias. Los indicadores de exactitud de inventario mencionados en el estudio servirán como modelo para programar la lógica de transacciones en el backend, permitiendo estructurar una API sólida que procese las entradas y salidas de componentes electrónicos sin generar inconsistencias de stock. 
+3. Autor(es) o institución: Lugmaña Llumiquinga, Mauricio Javier 
+Año: 2025
+Título o denominación: Desarrollo de un sistema responsivo para gestionar pedidos e inventario de componentes electrónicos mediante tecnologías web 
+Tipo de fuente: Tesis de grado – Universidad Técnica Particular de Loja. 
+Descripción breve: La investigación plantea el desarrollo de un sistema web responsivo para gestionar pedidos e inventario de componentes electrónicos, orientado a mejorar los procesos de administración de existencias y pedidos en empresas del sector electrónico. El proyecto se desarrolló mediante una metodología ágil organizada en múltiples sprints, donde se implementan progresivamente las funcionalidades del sistema. Entre sus características se consideran la autenticación de usuarios, gestión de pedidos, servicios RESTful para la comunicación entre frontend y backend y mecanismos de seguridad mediante JSON Web Token (JWT). Asimismo, se realizaron pruebas utilizando Postman para verificar el funcionamiento de los servicios y procesos implementados. 
+Aporte al proyecto: Este antecedente servirá como referencia directa para el desarrollo del Sistema Web de Gestión Logística e Inventario de Productos Electrónicos, debido a que aborda específicamente la gestión de inventarios y pedidos de componentes electrónicos mediante tecnologías web. Permitirá tomar como referencia la organización del sistema mediante iteraciones o sprints, la implementación de servicios RESTful, la autenticación y seguridad de usuarios y el uso de Postman para las pruebas de los servicios. Estos elementos guardan relación con las tecnologías y herramientas previstas para el proyecto, particularmente Laravel, Vue.js, una arquitectura basada en API REST y Postman. 
+4. Autor(es) o institución: Lima Camizan, J. W.
+Año: 2024
+Título o denominación: Sistema web basado en el modelo ABC, para el control de inventarios en la empresa Negocios Prieto Company S.A.C.
+Tipo de fuente: Tesis de Licenciatura en Ingeniería (Universidad Católica Santo Toribio de Mogrovejo - Chiclayo, Perú).
+Descripción breve: Esta investigación desarrolla un sistema web enfocado en la automatización y gestión eficiente de inventarios comerciales. El estudio destaca por su riguroso modelado de la base de datos relacional para soportar transacciones de stock en tiempo real, garantizando la integridad referencial de los datos. Además, detalla exhaustivamente las fases de pruebas de software (testing) implementadas para validar el correcto registro, actualización y consulta de entradas y salidas de mercancía, minimizando vulnerabilidades y asegurando la estabilidad del sistema ante múltiples usuarios.
+Aporte al proyecto: Como Arquitecto de Base de Datos y Tester, este antecedente me proporciona una guía metodológica validada para estructurar el diagrama Entidad-Relación (DER) de nuestro sistema logístico, asegurando que las tablas críticas (productos electrónicos, especificaciones técnicas y movimientos) estén correctamente normalizadas. Asimismo, servirá como referencia directa para diseñar nuestros planes y casos de prueba, garantizando que las consultas SQL a la base de datos y las transacciones de actualización de stock funcionen sin errores de concurrencia cuando el sistema sea utilizado por varias sucursales al mismo tiempo.
+
+
+
+
+
+
+9. DESCRIPCIÓN PRELIMINAR DEL SOFTWARE PROPUESTO
+¿Qué software se desarrollará?
+Se desarrollará un Sistema Web de Gestión Logística e Inventario de Productos Electrónicos. Esta herramienta será una plataforma centralizada y accesible mediante navegadores web, construida bajo una arquitectura cliente-servidor (frontend responsivo y backend basado en API REST). Estará orientada a digitalizar y optimizar el flujo logístico de pequeñas y medianas empresas (pymes) dedicadas a la comercialización de componentes y equipos electrónicos. 
+¿Qué problema o necesidad se espera atender?
+Se espera resolver la ineficiencia, el desabastecimiento y los constantes errores derivados de una gestión de inventarios manual o descentralizada. Actualmente, las pymes enfrentan graves dificultades para controlar el stock de componentes con alta especificidad técnica (voltajes, tolerancias, tipos de encapsulado), lo que genera pérdida de tiempo en la ubicación física, información desactualizada entre sucursales y toma de decisiones erróneas basadas en datos desfasados. 
+
+
+
+
+
+
+¿Quiénes serán sus principales usuarios?
+Los usuarios principales que interactuarán con el sistema son:
+   1. Personal de Almacén: Para gestionar entradas, salidas y trazar la ubicación exacta de los componentes en las estanterías.
+   2. Personal de Ventas: Para consultar el catálogo y la disponibilidad de stock en tiempo real desde cualquier sucursal antes de concretar una venta.
+   3. Administradores / Gerentes: Para visualizar reportes estratégicos, evaluar métricas de rotación de productos y recibir alertas de reposición.
+
+
+¿Cómo se espera que contribuya a solucionar el problema identificado?
+El sistema solucionará el problema automatizando la actualización del inventario de forma concurrente y en tiempo real. Al contar con una base de datos centralizada en la web, cualquier registro de entrada o salida se reflejará instantáneamente en todas las sucursales, eliminando las discrepancias de stock. Además, el registro estructurado de componentes (categorizado por especificaciones técnicas) agilizará las búsquedas, evitará confusiones en los despachos y proporcionará a la gerencia indicadores precisos para evitar compras excesivas o quiebres de stock. 
+10. ALCANCE PRELIMINAR DEL PROYECTO
+El proyecto comprenderá:
+   * Módulo de Seguridad y Autenticación: Inicio de sesión seguro con control de acceso basado en roles (Administrador, Ventas, Almacén).
+   * Módulo de Gestión de Catálogo e Inventario: Creación, lectura, actualización y eliminación (CRUD) de componentes electrónicos, incluyendo campos para especificaciones técnicas (categoría, fabricante, capacidad, ubicación física).
+   * Módulo de Movimientos Logísticos: Registro automatizado de transacciones (entradas por compras y salidas por ventas o traslados), manteniendo un historial de fecha, hora y usuario responsable.
+   * Módulo de Consultas: Un buscador avanzado y responsivo para verificar disponibilidad cruzada entre diferentes sucursales en tiempo real.
+   * Módulo de Reportes y Alertas: Generación de alertas automáticas de bajo stock (stock mínimo) y visualización de reportes básicos de inventario para la toma de decisiones.
+   * Despliegue inicial: Entrega de un producto de software funcional desplegado en un entorno web (servidor local o nube de pruebas) validado al finalizar el semestre académico.
+
+
+El proyecto no comprenderá:
+   * Integración con sistemas de facturación electrónica: No se desarrollará conexión con la SUNAT ni emisión de comprobantes de pago oficiales.
+   * Comercio electrónico (E-commerce): El sistema es de uso interno para la gestión logística de la pyme; no incluirá una tienda virtual para clientes finales ni pasarelas de pago.
+   * Módulos de Contabilidad o Recursos Humanos: Se excluye la gestión de planillas, cálculo de impuestos o cuentas por cobrar/pagar.
+   * Aplicaciones Móviles Nativas: No se desarrollarán apps descargables para Android o iOS (aunque el sistema web será responsivo y podrá usarse desde navegadores móviles).
+   * Migración de datos históricos: No se realizará la importación de bases de datos antiguas de la empresa, salvo la inserción de datos de prueba para la validación del software.
+
+
+11. FUNCIONALIDADES PRELIMINARES
+Identificar las principales funcionalidades que inicialmente se prevé que tendrá el software.
+N.º
+	Funcionalidad prevista
+	Usuario relacionado
+	Propósito
+	1
+	Gestión de Catálogo de Componentes 
+	Personal de Almacén / Administrador 
+	Permitir registrar, editar o dar de baja productos electrónicos, detallando sus características técnicas específicas y ubicación en estanterías. 
+	2
+	Registro Transaccional (Entradas y Salidas) 
+	Personal de Almacén 
+	Actualizar los niveles de inventario automáticamente cada vez que se recepciona mercancía de proveedores o se despachan productos. 
+	3
+	Búsqueda y Verificación de Stock 
+	Personal de Ventas 
+	Facilitar la consulta instantánea de disponibilidad de un producto en todas las sucursales mediante filtros técnicos (código, modelo, categoría). 
+	4
+	Panel de Control y Alertas de Desabastecimiento 
+	Administradores / Gerentes 
+	Notificar al sistema cuando un componente alcanza el límite mínimo de existencias (stock de seguridad) para gestionar su compra a tiempo. 
+	5
+	Gestión de Usuarios y Auditoría 
+	Administrador 
+	Asignar credenciales, definir roles de acceso y mantener un registro (log) de qué usuario realizó cada movimiento en el sistema. 
+	
+
+
+
+
+
+
+
+
+
+12. MODELO DE PROCESO DE DESARROLLO DE SOFTWARE
+Seleccionar el modelo de proceso que se propone utilizar para desarrollar el proyecto.
+Modelo de proceso seleccionado: Modelos iterativo e incremental
+12.1. Justificación de la selección
+Explicar por qué el modelo seleccionado se considera adecuado para las características del proyecto, el equipo de trabajo, los usuarios y el producto que se pretende desarrollar.
+No será suficiente presentar únicamente una definición teórica del modelo.
+Se eligió el modelo iterativo e incremental por su implementación y despliegue apropiado para proyectos que requieren adaptabilidad en su desarrollo, y un sistema de gestión de inventario necesita ser altamente evolutivo y adaptativo a futuras tecnologías que permitan a los usuarios una mejor referencia al producto que están observando para su posterior compra, por lo que los modelos iterativo e incremental son altamente modificables y evolutivos, además que son modelos apropiados para proyectos tempranos ya que fomenta la colaboración del equipo en cada iteración para reducir errores o funciones inútiles.
+12.2. Aplicación prevista al proyecto
+Explicar cómo se proyecta aplicar el modelo seleccionado durante el semestre, identificando sus principales etapas, actividades, iteraciones o ciclos, según corresponda.
+El desarrollo se dividirá en iteraciones que estarán sincronizadas con el sílabo, se tendrá previsto que la primera iteración finalice en la semana 8 coincidiendo con el informe técnico y sus posteriores versiones incluirán etapas que se centrarán en la planificación de corrección de errores y futuras funcionalidades importantes para la optimización del software. En la iteración final abarcará pruebas de validación global y el despliegue del software terminado.
+12.3. Productos o evidencias previstas
+Indicar los principales productos que se generarán durante la aplicación del modelo: especificación de requisitos, modelos, diseños, componentes de software, versiones, pruebas, documentación u otros que correspondan.
+Se generarán diagramas UML (casos de uso, clases, base de datos), el Product Backlog con las historias de usuario, repositorios de código fuente estructurados, planes de pruebas, y los informes técnicos correspondientes a las fases de Análisis, Diseño, Construcción y Validación final.
+13. TECNOLOGÍAS Y HERRAMIENTAS PREVISTAS
+Indicar preliminarmente las tecnologías y herramientas que se prevé utilizar durante el desarrollo.
+Elemento
+	Tecnología o herramienta prevista
+	Tipo de aplicación
+	Sistema Web 
+	Lenguaje(s) de programación
+	PHP (Backend), JavaScript / HTML5 / CSS3 (Frontend) 
+	Framework o plataforma
+	Laravel para estructurar una API REST segura y eficiente en el backend; Vue.js para construir una interfaz de usuario reactiva y dinámica en el frontend
+	Base de datos
+	PostgreSQL
+	Herramienta(s) de modelado
+	Lucidchart, Visual Paradigm o StarUML
+	Control de versiones/repositorio
+	Git, alojado en GitHub o GitLab. 
+	Herramientas para pruebas
+	Postman (para pruebas de endpoints de la API) y herramientas integradas del navegador
+	Otras herramientas
+	Despliegue de entornos de desarrollo contenedorizados utilizando Docker para garantizar que todos los miembros del equipo trabajen bajo las mismas configuraciones; editores de código como Cursor o Visual Studio Code
+	Las tecnologías seleccionadas podrán modificarse durante el desarrollo cuando exista una justificación técnica.
+14. ORGANIZACIÓN DEL EQUIPO
+Establecer la organización inicial del grupo para desarrollar el proyecto.
+Integrante
+	Responsabilidad principal prevista
+	Quispe Cruz Anthony Junior 
+	​Desarrollador Backend (Base de Datos, Consultas y QA)
+	Quispe Huaman Franklin Victor 
+	​Desarrollador Frontend (Requisitos, Módulo Ventas y Reportes)
+	Tito Monteagudo William Dominic 
+	​Desarrollador Backend (Arquitectura API y Transacciones) 
+	Vilca Carpio Carlos Daniel 
+	​Desarrollador Frontend (UI/UX y Módulo de Almacén)
+	Las responsabilidades dependen del modelo de proceso seleccionado y podrán modificarse durante el desarrollo.
+La asignación de responsabilidades no significa que un integrante sea responsable exclusivamente de una parte del producto. Todos los integrantes deberán conocer el proyecto integralmente y participar en su desarrollo.
+15. CRONOGRAMA DEL PROYECTO
+Planificar las principales actividades que se desarrollarán durante el semestre.
+El cronograma deberá ser coherente con el modelo de proceso seleccionado y considerar obligatoriamente los siguientes hitos:
+Semana
+	Actividad/Hito
+	Producto
+	3
+	Planificación inicial del proyecto y selección del modelo de proceso
+	Plan de Proyecto de Software
+	8
+	Integración del análisis de requisitos y diseño de la solución
+	Informe Técnico de Análisis y Diseño
+	13
+	Construcción, integración y verificación del producto
+	Informe Técnico de Construcción y Verificación
+	17
+	Validación, mejora, integración y consolidación
+	Informe Técnico Final + Producto de Software Funcional
+	
+
+Semana
+	Actividad prevista
+	Responsable(s)
+	Producto/Evidencia
+	3
+	Planificación inicial, definición del problema, objetivos y selección del modelo de proceso.  
+	Todos los integrantes 
+	Plan de Proyecto de Software 
+	4
+	Identificación de usuarios, interesados, necesidades y problemas de los procesos logísticos actuales. 
+	Quispe Cruz Anthony Junior 
+	Lista de necesidades, usuarios e interesados identificados. 
+	5
+	Definición de requisitos funcionales y no funcionales, reglas del negocio e historias de usuario. 
+	Quispe Cruz Anthony Junior  
+	Documento de requisitos, historias de usuario y Product Backlog inicial. 
+	6
+	Definición de módulos, componentes, arquitectura del sistema y estructura de la base de datos. 
+	Quispe Huaman Franklin Victor 
+	Arquitectura preliminar, módulos definidos y modelo inicial de datos. 
+	7
+	Diseño de la base de datos, diagramas UML y prototipos de las interfaces web. 
+	Quispe Huaman Franklin Victor, Quispe Cruz Anthony Junior y Vilca Carpio Carlos Daniel 
+	Modelo de datos, diagramas UML y prototipos de interfaces. 
+	8
+	Revisión, integración y validación de los requisitos, la arquitectura y el diseño. 
+	Todos los integrantes 
+	Informe Técnico de Análisis y Diseño. 
+	9
+	Configuración del entorno, creación de la base de datos, estructura del backend e implementación inicial de la API REST. 
+	Tito Monteagudo William Dominic
+	Base de datos configurada y estructura inicial del backend y la API.  
+	10
+	Desarrollo de las interfaces web e integración inicial con los servicios del backend. 
+	Vilca Carpio Carlos Daniel
+
+
+	Interfaz web conectada con la API y funcionalidades iniciales. 
+	11
+	Implementación de la gestión del catálogo, inventario, entradas, salidas y trazabilidad de productos. 
+	Tito Monteagudo William Dominic 
+	Módulos principales integrados y registro de movimientos de inventario. 
+	12
+	Desarrollo de consultas, reportes y alertas de stock; ejecución de pruebas técnicas y corrección de errores. 
+	Quispe Huaman Franklin Victor 
+	Versión integrada, evidencias de pruebas y errores registrados. 
+	13
+	Consolidación de la construcción, integración y verificación técnica del producto. 
+	Todos los integrantes 
+	Informe Técnico de Construcción y Verificación. 
+	14
+	Validación funcional y operacional de los procesos de usuarios, incluyendo pruebas de entradas, salidas, consultas y concurrencia. 
+	Quispe Huaman Franklin Victor  
+	Casos de prueba ejecutados, resultados y evidencias de validación. 
+	15
+	Corrección de errores y mejoras de usabilidad, seguridad y consistencia de la información. 
+	Tito Monteagudo William Dominic y Vilca Carpio Carlos Daniel 
+	Versión mejorada y registro de correcciones. 
+	16
+	Integración final, elaboración de documentación técnica y preparación del despliegue. 
+	Todos los integrantes 
+	Versión candidata final y documentación del proyecto.  
+	17
+	Validación final, demostración del sistema, consolidación de informes y entrega del producto funcional. 
+	Todos los integrantes 
+	Informe Técnico Final + Producto de Software Funcional 
+	A partir de estos hitos, el grupo deberá elaborar su propio cronograma indicando semanas específicas para las actividades previstas.
+
+
+
+
+16. RESULTADOS ESPERADOS
+Al finalizar el proyecto se espera obtener un sistema web funcional para la gestión logística y el control de inventario de productos electrónicos, que centralice la información de existencias y permita gestionar las entradas, salidas y trazabilidad de los componentes en tiempo real.
+El sistema deberá atender las necesidades de los principales usuarios identificados: personal de almacén, personal de ventas y administradores o gerentes de la pyme, proporcionando información actualizada para el control del stock, la consulta de disponibilidad y la toma de decisiones.
+Se espera que el producto cumpla los requisitos funcionales y no funcionales que sean establecidos y validados durante las etapas de Ingeniería de Requisitos, Diseño, Construcción, Verificación y Validación, manteniendo una arquitectura modular, mantenible y escalable.
+Finalmente, mediante las pruebas técnicas y operacionales, se buscará comprobar la calidad, confiabilidad, seguridad, consistencia de la información y correcto funcionamiento del sistema, realizando las mejoras necesarias antes de la entrega del producto de software funcional.
+
+
+REFERENCIAS
+Registrar las fuentes académicas y técnicas utilizadas para elaborar el Plan de Proyecto, especialmente las correspondientes a antecedentes, modelos de proceso, tecnologías y demás decisiones iniciales.
+Las referencias deberán presentarse utilizando un formato académico consistente, preferentemente APA.
+Part-Db. (s. f.). GitHub - Part-DB/Part-DB-server: Part-DB is an Open source inventory management system for your electronic components. GitHub. https://github.com/Part-DB/Part-DB-server
+
+
+Lugmaña Llumiquinga, M. J. (2025). Desarrollo de un sistema responsivo para gestionar pedidos e inventario de componentes electrónicos mediante tecnologías web [Tesis de grado, Universidad Técnica Particular de Loja]. Repositorio Institucional UTPL. https://dspace.utpl.edu.ec/handle/29.500.19856/72783 
+
+
+
+
+INDICACIONES FINALES
+El Plan de Proyecto deberá ser desarrollado de manera grupal y constituirá la planificación inicial del trabajo que se realizará durante el semestre.
+La presentación del Plan en la semana 3 no implica que los requisitos y el diseño del software se encuentren definidos de manera definitiva. Estos serán desarrollados y refinados progresivamente mediante las actividades de Ingeniería de Requisitos y Diseño de Software.
+Las funcionalidades, tecnologías, alcance y demás decisiones inicialmente propuestas podrán modificarse posteriormente cuando los resultados del análisis o las necesidades del proyecto lo justifiquen.
+El grupo deberá aplicar durante el semestre el modelo de proceso seleccionado y mantener evidencias de su aplicación.
+Todos los integrantes deberán participar activamente y estar en condiciones de explicar y sustentar cualquier sección del proyecto.
