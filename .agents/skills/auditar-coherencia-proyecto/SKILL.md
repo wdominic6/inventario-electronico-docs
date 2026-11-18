@@ -22,10 +22,10 @@ Sigue este procedimiento para asegurar que los entregables de `docs/` (Semanas 3
    - En los diagramas de secuencia de movimientos de stock, refleja el paso de validación y bloqueo de fila (`SELECT ... FOR UPDATE` en MySQL 8.4 InnoDB) dentro de la transacción.
 
 3. **Verificar Prototipos vs. Vistas Vue 3**:
-   - Revisa `../frontend/src/views/` para asegurar que los nombres de pantallas y campos en `docs/prototipos/` e `informes/` coincidan con los módulos de **Carlos** (`catalogo`, `movimientos`, `auth`) y **Franklin** (`consultas`, `reportes`).
+   - Revisa `../frontend/src/views/` para asegurar que los nombres de pantallas y campos en `docs/prototipos/` e `informes/` coincidan con los módulos de **Carlos** (`catalogo`, `movimientos`, `auth`) y **William** (`consultas`, `reportes`).
 
 4. **Validar Reglas de Forma (Checklist de `REVISION_PLAN.md`)**:
    - ¿Dice MySQL 8.4 en vez de PostgreSQL?
    - ¿Está redactado íntegramente en 3ra persona y sin textos de plantilla de la docente?
    - ¿Están las 4 citas y referencias en APA 7 ordenadas alfabéticamente?
-   - ¿El reparto de actividades respeta el rol real de Anthony (BD, Consultas y QA), William (API y Transacciones), Carlos (UI/UX y Almacén) y Franklin (Requisitos, Ventas y Reportes)?
+   - ¿El reparto de actividades respeta el rol real de Anthony (BD, Consultas y QA), William (API y Transacciones + frontend de Ventas y Reportes, reasignado desde Franklin) y Carlos (UI/UX y Almacén)?
