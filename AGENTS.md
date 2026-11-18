@@ -9,9 +9,10 @@ Repositorio `inventario-electronico-docs` del proyecto **Sistema Web de Gestión
 | Integrante | Rol Oficial | Dominio en Código y Documentación |
 | :--- | :--- | :--- |
 | **Quispe Cruz Anthony Junior** | Desarrollador Backend (Base de Datos, Consultas y QA) | DER, modelo relacional MySQL 8.4, historias de usuario, endpoints de consultas/reportes y plan/casos de prueba (PHPUnit y concurrencia) |
-| **Quispe Huaman Franklin Victor** | Desarrollador Frontend (Requisitos, Módulo Ventas y Reportes) | Especificación de requisitos, arquitectura de módulos, vistas de consultas multi-sucursal, dashboard gerencial y alertas de bajo stock |
-| **Tito Monteagudo William Dominic** | Desarrollador Backend (Arquitectura API y Transacciones) | Entorno Docker (`infra`), arquitectura API REST (Laravel 13 + Sanctum), catálogo técnico y motor transaccional ACID (`lockForUpdate`) |
+| **Tito Monteagudo William Dominic** | Desarrollador Backend (Arquitectura API y Transacciones) + Frontend (Requisitos, Módulo Ventas y Reportes) | Entorno Docker (`infra`), arquitectura API REST (Laravel 13 + Sanctum), catálogo técnico, motor transaccional ACID (`lockForUpdate`), especificación de requisitos, vistas de consultas multi-sucursal, dashboard gerencial y alertas de bajo stock |
 | **Vilca Carpio Carlos Daniel** | Desarrollador Frontend (UI/UX y Módulo de Almacén) | Prototipos UI/UX, diseño responsivo Vue 3.5, vistas de autenticación/usuarios, catálogo con ubicación en estantería y movimientos de almacén |
+
+> **Cambio de equipo (noviembre 2026)**: Quispe Huaman Franklin Victor se retiró del proyecto. Sus responsabilidades (requisitos, módulo de ventas/consultas y reportes/alertas) fueron reasignadas a **Tito Monteagudo William Dominic**. Los documentos históricos (`PlanificacionProyecto_Grupo6.docx.txt`, `REVISION_PLAN.md`) conservan la distribución original.
 
 ## Hitos del Semestre
 - **Semana 3 (16/09/2026)**: Plan de Proyecto de Software (`PlanificacionProyecto_Grupo6.docx.txt` y `REVISION_PLAN.md`).

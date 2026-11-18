@@ -8,9 +8,10 @@ Docente: Ing. Marga Isabel Ingaluque Arapa.
 | Integrante | Rol |
 |---|---|
 | Quispe Cruz Anthony Junior | Backend: base de datos, consultas y QA |
-| Quispe Huaman Franklin Victor | Frontend: requisitos, módulo de ventas y reportes |
-| Tito Monteagudo William Dominic | Backend: arquitectura de la API y transacciones |
+| Tito Monteagudo William Dominic | Backend: arquitectura de la API y transacciones · Frontend: requisitos, módulo de ventas y reportes |
 | Vilca Carpio Carlos Daniel | Frontend: UI/UX y módulo de almacén |
+
+> Quispe Huaman Franklin Victor se retiró del proyecto (noviembre 2026); sus tareas fueron reasignadas a Tito Monteagudo William Dominic.
 
 ## Hitos
 | Semana | Fecha | Entregable |
